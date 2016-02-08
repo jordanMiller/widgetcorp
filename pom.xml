@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.citytechinc.aem.bedrock</groupId>
         <artifactId>bedrock</artifactId>
-        <version>3.1.1</version>
+        <version>4.0.3</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -47,8 +47,7 @@
         <core.artifactId>widgetcorp-core</core.artifactId>
 
         <!-- versions -->
-        <bedrock.version>3.1.1</bedrock.version>
-        <multicompositeaddon.version>1.0.0</multicompositeaddon.version>
+        <bedrock.version>4.0.3</bedrock.version>
 
         <!-- defaults -->
         <package.skip>true</package.skip>
@@ -106,14 +105,14 @@
             </dependency>
             <dependency>
                 <groupId>com.citytechinc.aem.bedrock</groupId>
+                <artifactId>bedrock-models</artifactId>
+                <version>${bedrock.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.citytechinc.aem.bedrock</groupId>
                 <artifactId>bedrock-ui</artifactId>
                 <version>${bedrock.version}</version>
                 <type>zip</type>
-            </dependency>
-            <dependency>
-                <groupId>com.citytechinc.aem</groupId>
-                <artifactId>multicomposite-addon</artifactId>
-                <version>${multicompositeaddon.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
